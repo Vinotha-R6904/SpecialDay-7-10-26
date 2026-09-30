@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>For My Mama ❤️</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -16,10 +18,18 @@
         body {
             min-height: 100vh;
             font-family: Georgia, "Times New Roman", serif;
-            background: linear-gradient(135deg, #12000b, #3b071d, #17000f);
+            background:
+                linear-gradient(
+                    135deg,
+                    #12000b,
+                    #3b071d,
+                    #17000f
+                );
             color: white;
             overflow: hidden;
         }
+
+        /* ---------- COMMON PAGE ---------- */
 
         .page {
             min-height: 100vh;
@@ -32,43 +42,53 @@
             overflow: hidden;
         }
 
+        .content {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 700px;
+            animation: appear 1.5s ease;
+        }
+
+        /* ---------- BACKGROUND GLOW ---------- */
+
         .glow {
             position: absolute;
-            width: 300px;
-            height: 300px;
-            background: rgba(255, 50, 120, 0.18);
+            width: 320px;
+            height: 320px;
             border-radius: 50%;
+            background: rgba(255, 50, 120, 0.18);
             filter: blur(80px);
         }
 
         .glow1 {
-            top: -100px;
-            left: -100px;
+            top: -120px;
+            left: -120px;
         }
 
         .glow2 {
+            right: -120px;
             bottom: -120px;
-            right: -100px;
         }
 
-        .content {
-            position: relative;
-            z-index: 5;
-            max-width: 700px;
-            animation: appear 2s ease;
+        /* ---------- OPENING PAGE ---------- */
+
+        #openingPage {
+            display: flex;
         }
 
-        .small-heart {
-            font-size: 35px;
+        .main-heart {
+            font-size: 60px;
             animation: heartbeat 1.5s infinite;
             margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 48px;
+            font-size: 50px;
             color: #ffb6d9;
             margin-bottom: 25px;
-            text-shadow: 0 0 20px rgba(255, 100, 170, 0.7);
+            text-shadow:
+                0 0 15px rgba(255, 100, 170, 0.7);
         }
 
         .message {
@@ -78,50 +98,143 @@
         }
 
         .highlight {
-            font-size: 26px;
+            font-size: 25px;
             color: #ff9ac7;
             font-weight: bold;
-            margin: 20px 0;
+            margin: 22px 0;
         }
+
+        /* ---------- BUTTON ---------- */
 
         .button {
             margin-top: 35px;
             padding: 17px 35px;
             border: none;
             border-radius: 50px;
-            background: linear-gradient(90deg, #ff4f9a, #ff79b5);
+            background:
+                linear-gradient(
+                    90deg,
+                    #ff4f9a,
+                    #ff79b5
+                );
             color: white;
             font-size: 17px;
             font-weight: bold;
             cursor: pointer;
-            box-shadow: 0 0 25px rgba(255, 70, 150, 0.6);
+            box-shadow:
+                0 0 25px rgba(255, 70, 150, 0.6);
             transition: 0.3s;
         }
 
         .button:hover {
             transform: scale(1.08);
-            box-shadow: 0 0 40px rgba(255, 100, 180, 0.9);
+            box-shadow:
+                0 0 40px rgba(255, 100, 180, 0.9);
         }
 
-        .heart {
-            position: absolute;
-            bottom: -30px;
-            font-size: 22px;
-            animation: floatUp linear infinite;
-            opacity: 0.8;
+        /* ---------- SCREEN 2 ---------- */
+
+        #questionPage {
+            display: none;
         }
+
+        .question-heart {
+            font-size: 55px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        .question-title {
+            margin-top: 20px;
+            font-size: 40px;
+            color: #ffb6d9;
+        }
+
+        .question-text {
+            margin-top: 25px;
+            font-size: 22px;
+            line-height: 1.7;
+            color: #ffe6f1;
+        }
+
+        /* ---------- OPTIONS ---------- */
+
+        .options {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+        }
+
+        .option-button {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ff79b5;
+            border-radius: 40px;
+            background: rgba(255, 80, 150, 0.12);
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .option-button:hover {
+            background: #ff4f9a;
+            transform: scale(1.04);
+            box-shadow:
+                0 0 25px rgba(255, 100, 180, 0.7);
+        }
+
+        /* ---------- ANSWER ---------- */
+
+        #answer {
+            display: none;
+            margin-top: 30px;
+            animation: appear 1s ease;
+        }
+
+        .answer-text {
+            font-size: 21px;
+            line-height: 1.8;
+            color: #ffe6f1;
+        }
+
+        .everything {
+            font-size: 32px;
+            color: #ff9ac7;
+            font-weight: bold;
+            margin-top: 20px;
+            text-shadow:
+                0 0 15px rgba(255, 100, 170, 0.7);
+        }
+
+        /* ---------- FLOATING HEARTS ---------- */
+
+        .floating-heart {
+            position: absolute;
+            bottom: -40px;
+            font-size: 22px;
+            opacity: 0.8;
+            animation:
+                floatUp linear infinite;
+            z-index: 2;
+        }
+
+        /* ---------- ANIMATIONS ---------- */
 
         @keyframes heartbeat {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: scale(1);
             }
 
             50% {
-                transform: scale(1.25);
+                transform: scale(1.2);
             }
         }
 
         @keyframes appear {
+
             from {
                 opacity: 0;
                 transform: translateY(30px);
@@ -134,8 +247,11 @@
         }
 
         @keyframes floatUp {
+
             from {
-                transform: translateY(0) rotate(0deg);
+                transform:
+                    translateY(0)
+                    rotate(0deg);
                 opacity: 0;
             }
 
@@ -144,10 +260,14 @@
             }
 
             to {
-                transform: translateY(-110vh) rotate(360deg);
+                transform:
+                    translateY(-110vh)
+                    rotate(360deg);
                 opacity: 0;
             }
         }
+
+        /* ---------- MOBILE ---------- */
 
         @media (max-width: 600px) {
 
@@ -160,106 +280,340 @@
             }
 
             .highlight {
-                font-size: 22px;
+                font-size: 21px;
+            }
+
+            .question-title {
+                font-size: 32px;
+            }
+
+            .question-text {
+                font-size: 19px;
+            }
+
+            .everything {
+                font-size: 26px;
             }
 
             .button {
                 font-size: 15px;
                 padding: 15px 28px;
             }
+
         }
+
     </style>
+
 </head>
 
 <body>
 
-<div class="page">
 
-    <div class="glow glow1"></div>
-    <div class="glow glow2"></div>
+    <!-- ==================================================
+         SCREEN 1 - OPENING
+    =================================================== -->
 
-    <div class="content">
+    <section class="page" id="openingPage">
 
-        <div class="small-heart">❤️</div>
+        <div class="glow glow1"></div>
+        <div class="glow glow2"></div>
 
-        <h1>Oii Mama...</h1>
+        <div class="content">
 
-        <div class="message">
-            I have been waiting to tell you something... 🥹
+            <div class="main-heart">
+                ❤️
+            </div>
+
+            <h1>
+                Oii Mama...
+            </h1>
+
+            <div class="message">
+                I have been waiting to tell you something... 🥹
+            </div>
+
+            <div class="highlight">
+                This isn't just a birthday wish. ❤️
+            </div>
+
+            <div class="message">
+                It's a little piece of my heart,
+                <br>
+                made specially for you. 💕
+            </div>
+
+            <div class="highlight">
+                🎁 There is something waiting for you...
+            </div>
+
+            <button
+                class="button"
+                onclick="openSurprise()">
+
+                OPEN YOUR SURPRISE ❤️
+
+            </button>
+
         </div>
 
-        <div class="highlight">
-            This isn't just a birthday wish. ❤️
+    </section>
+
+
+    <!-- ==================================================
+         SCREEN 2 - WHO ARE YOU TO ME?
+    =================================================== -->
+
+    <section class="page" id="questionPage">
+
+        <div class="glow glow1"></div>
+        <div class="glow glow2"></div>
+
+        <div class="content">
+
+            <div class="question-heart">
+                ❤️
+            </div>
+
+            <h2 class="question-title">
+                Oii Mama...
+            </h2>
+
+            <div class="question-text">
+
+                One little question for you... 🥹
+
+                <br><br>
+
+                <strong>
+                    Who are you to me? ❤️
+                </strong>
+
+            </div>
+
+
+            <!-- OPTIONS -->
+
+            <div class="options" id="options">
+
+                <button
+                    class="option-button"
+                    onclick="showAnswer()">
+
+                    My Husband ❤️
+
+                </button>
+
+                <button
+                    class="option-button"
+                    onclick="showAnswer()">
+
+                    My Best Friend 🫶
+
+                </button>
+
+                <button
+                    class="option-button"
+                    onclick="showAnswer()">
+
+                    My Favourite Person 😍
+
+                </button>
+
+                <button
+                    class="option-button"
+                    onclick="showAnswer()">
+
+                    My Fighting Partner 😤❤️
+
+                </button>
+
+                <button
+                    class="option-button"
+                    onclick="showAnswer()">
+
+                    My Paithiyam 🤪❤️
+
+                </button>
+
+            </div>
+
+
+            <!-- ANSWER -->
+
+            <div id="answer">
+
+                <div class="answer-text" id="answerText">
+
+                    Hmm... let me think... 🤔❤️
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="message">
-            It's a little piece of my heart,<br>
-            made specially for you. 💕
-        </div>
+    </section>
 
-        <div class="highlight">
-            🎁 There is something waiting for you...
-        </div>
 
-        <button class="button" onclick="openSurprise()">
-            OPEN YOUR SURPRISE ❤️
-        </button>
+    <!-- ==================================================
+         FLOATING HEARTS
+    =================================================== -->
 
+    <div
+        class="floating-heart"
+        style="left:5%; animation-duration:8s;">
+        ❤️
     </div>
 
-    <!-- Floating Hearts -->
+    <div
+        class="floating-heart"
+        style="left:15%; animation-duration:10s; animation-delay:2s;">
+        💕
+    </div>
 
-    <div class="heart" style="left:5%; animation-duration:8s;">❤️</div>
-    <div class="heart" style="left:15%; animation-duration:10s; animation-delay:2s;">💕</div>
-    <div class="heart" style="left:28%; animation-duration:7s; animation-delay:1s;">💗</div>
-    <div class="heart" style="left:42%; animation-duration:11s; animation-delay:3s;">❤️</div>
-    <div class="heart" style="left:55%; animation-duration:8s; animation-delay:2s;">💖</div>
-    <div class="heart" style="left:68%; animation-duration:10s; animation-delay:1s;">💕</div>
-    <div class="heart" style="left:80%; animation-duration:7s; animation-delay:3s;">❤️</div>
-    <div class="heart" style="left:92%; animation-duration:9s;">💗</div>
+    <div
+        class="floating-heart"
+        style="left:28%; animation-duration:7s; animation-delay:1s;">
+        💗
+    </div>
 
-</div>
+    <div
+        class="floating-heart"
+        style="left:42%; animation-duration:11s; animation-delay:3s;">
+        ❤️
+    </div>
 
-function showAnswer() {
+    <div
+        class="floating-heart"
+        style="left:55%; animation-duration:8s; animation-delay:2s;">
+        💖
+    </div>
 
-    const options = document.querySelector(".options");
-    const answer = document.getElementById("answer");
+    <div
+        class="floating-heart"
+        style="left:68%; animation-duration:10s; animation-delay:1s;">
+        💕
+    </div>
 
-    options.style.display = "none";
+    <div
+        class="floating-heart"
+        style="left:80%; animation-duration:7s; animation-delay:3s;">
+        ❤️
+    </div>
 
-    answer.style.display = "block";
+    <div
+        class="floating-heart"
+        style="left:92%; animation-duration:9s;">
+        💗
+    </div>
 
-    answer.innerHTML = `
-        <div class="question">
-            Hmm... let me think... 🤔❤️
-        </div>
-    `;
 
-    setTimeout(function() {
+    <!-- ==================================================
+         JAVASCRIPT
+    =================================================== -->
 
-        answer.innerHTML = `
-            <div class="question">
-                Okay... I know the answer! 😂❤️
-                <br><br>
-                Actually... you're <strong>ALL OF THEM!</strong> 🥹❤️
-                <br><br>
-                My Love ❤️<br>
-                My Fighting Partner 😤❤️<br>
-                My Paithiyam 🤪❤️
-            </div>
+    <script>
 
-            <div class="everything">
-                YOU ARE MY EVERYTHING ❤️
-            </div>
+        /* OPEN SURPRISE */
 
-            <button class="next" onclick="nextPage()">
-                NEXT ❤️
-            </button>
-        `;
+        function openSurprise() {
 
-    }, 1500);
+            document.getElementById("openingPage").style.display = "none";
 
-}
+            document.getElementById("questionPage").style.display = "flex";
+
+        }
+
+
+        /* SHOW ANSWER */
+
+        function showAnswer() {
+
+            const options =
+                document.getElementById("options");
+
+            const answer =
+                document.getElementById("answer");
+
+            const answerText =
+                document.getElementById("answerText");
+
+
+            /* Hide all options */
+
+            options.style.display = "none";
+
+
+            /* Show answer */
+
+            answer.style.display = "block";
+
+
+            /* First message */
+
+            answerText.innerHTML = `
+                
+                Hmm... let me think... 🤔❤️
+
+            `;
+
+
+            /* Final message after 1.5 seconds */
+
+            setTimeout(function () {
+
+                answerText.innerHTML = `
+
+                    Okay... I know the answer! 😂❤️
+
+                    <br><br>
+
+                    Actually... you're
+                    <strong>ALL OF THEM!</strong> 🥹❤️
+
+                    <br><br>
+
+                    My Love ❤️
+                    <br>
+
+                    My Fighting Partner 😤❤️
+                    <br>
+
+                    My Paithiyam 🤪❤️
+
+                    <div class="everything">
+
+                        YOU ARE MY EVERYTHING ❤️
+
+                    </div>
+
+                    <button
+                        class="button"
+                        onclick="nextPage()">
+
+                        NEXT ❤️
+
+                    </button>
+
+                `;
+
+            }, 1500);
+
+        }
+
+
+        /* NEXT PAGE - TEMPORARY */
+
+        function nextPage() {
+
+            alert(
+                "More surprises are waiting for you... ❤️🥹"
+            );
+
+        }
+
+    </script>
 
 </body>
+
 </html>
