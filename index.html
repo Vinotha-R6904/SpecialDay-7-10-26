@@ -220,15 +220,46 @@
 
 </div>
 
-<script>
+function showAnswer() {
 
-function openSurprise() {
+    const options = document.querySelector(".options");
+    const answer = document.getElementById("answer");
 
-    alert("Wait Mama... ❤️ The real surprise is coming! 🥹");
+    options.style.display = "none";
+
+    answer.style.display = "block";
+
+    answer.innerHTML = `
+        <div class="question">
+            Hmm... let me think... 🤔❤️
+        </div>
+    `;
+
+    setTimeout(function() {
+
+        answer.innerHTML = `
+            <div class="question">
+                Okay... I know the answer! 😂❤️
+                <br><br>
+                Actually... you're <strong>ALL OF THEM!</strong> 🥹❤️
+                <br><br>
+                My Love ❤️<br>
+                My Fighting Partner 😤❤️<br>
+                My Paithiyam 🤪❤️
+            </div>
+
+            <div class="everything">
+                YOU ARE MY EVERYTHING ❤️
+            </div>
+
+            <button class="next" onclick="nextPage()">
+                NEXT ❤️
+            </button>
+        `;
+
+    }, 1500);
 
 }
-
-</script>
 
 </body>
 </html>
