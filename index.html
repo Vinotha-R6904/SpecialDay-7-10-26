@@ -1,67 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Special Day ❤️</title><style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Georgia,'Times New Roman',serif;color:#fff;background:radial-gradient(circle at 50% 20%,#6d125e,#290022 65%,#140014);overflow-x:hidden}body{min-height:100vh}.heart{position:fixed;z-index:0;opacity:.45;animation:float 7s linear infinite;font-size:22px}.h1{left:8%;bottom:5%}.h2{left:22%;top:8%;animation-delay:2s}.h3{right:8%;top:12%;animation-delay:1s}.h4{right:18%;bottom:8%;animation-delay:3s}.h5{left:50%;top:3%;animation-delay:4s}@keyframes float{0%{transform:translateY(30px) scale(.8);opacity:0}20%{opacity:.5}100%{transform:translateY(-100vh) scale(1.3);opacity:0}}.page{display:none;position:relative;z-index:1;min-height:100vh;padding:32px 18px 95px;align-items:center;justify-content:center}.page.active{display:flex}.card{width:min(1000px,96vw);padding:34px;border:1px solid #a84d91;border-radius:30px;background:rgba(38,0,31,.78);box-shadow:0 0 40px #ff39ad22;text-align:center}.kicker{letter-spacing:5px;font-size:13px;color:#e7b9dc;margin-bottom:18px}.title{font-size:clamp(36px,6vw,72px);margin:8px 0 20px;text-shadow:0 0 18px #ff55b0}.sub{font-size:clamp(17px,2.2vw,24px);line-height:1.55}.btn{border:1px solid #ff9bd7;background:linear-gradient(135deg,#ff2997,#9d1678);color:white;border-radius:30px;padding:14px 25px;font-size:17px;font-weight:bold;cursor:pointer;margin:10px 5px;box-shadow:0 0 20px #ff39ad44}.btn:hover{transform:translateY(-2px)}.back{background:#4a1844}.row{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.heroimg{width:min(430px,90vw);max-height:500px;object-fit:cover;border-radius:25px;border:2px solid #b968a6;box-shadow:0 0 35px #ff3eb755}.open-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.message{padding:20px;border:1px solid #a84d91;border-radius:20px;background:#5a164e99;text-align:left}.options{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:25px auto;max-width:700px}.option{padding:14px;border-radius:18px;background:#58154d;border:1px solid #9e4e8b;font-weight:bold}.answer{margin:20px auto;padding:20px;border-radius:20px;background:#6d1b5c;display:none}.fightcount{font-size:60px;font-weight:bold;color:#ff8dd0}.calc{font-size:clamp(20px,3vw,32px);line-height:1.8}.gift{font-size:100px;cursor:pointer;filter:drop-shadow(0 0 15px #ff4db4)}.reveal{display:none;margin:20px auto;max-width:600px;padding:22px;border-radius:20px;background:#6c1a5a}.scene{width:min(900px,94vw);margin:20px auto;overflow:hidden;border-radius:25px;border:2px solid #bd4b9c;box-shadow:0 0 35px #ff39ad55}.scene img{width:100%;display:block;aspect-ratio:16/8;object-fit:cover}.scene.animated img{animation:romance 4s ease-in-out infinite alternate}@keyframes romance{0%{transform:scale(1)}50%{transform:scale(1.04)}100%{transform:scale(1.01)}}.balloons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:25px}.balloon{font-size:55px;cursor:pointer;transition:.25s}.balloon:hover{transform:translateY(-8px) scale(1.08)}#balloonMsg{min-height:55px;font-size:25px;color:#ffd4ef}.final{font-size:clamp(32px,6vw,64px);text-shadow:0 0 20px #ff45ae}.pin{position:fixed;inset:0;background:radial-gradient(circle,#6a155d,#180014);z-index:99;display:flex;align-items:center;justify-content:center;padding:20px}.pinbox{width:min(450px,92vw);padding:35px;text-align:center;border:1px solid #a84d91;border-radius:28px;background:#2c0028eF;box-shadow:0 0 50px #ff3aa955}.pinbox input{width:100%;padding:15px;border-radius:15px;border:1px solid #c56aaa;background:#21001f;color:white;font-size:22px;text-align:center;letter-spacing:8px}.error{color:#ff9bcf;margin:10px}.noBtn{position:relative}.tiny{font-size:14px;color:#e4b7d8}.letter{display:none;padding:22px;background:#681858;border-radius:20px;margin:20px auto;max-width:650px;line-height:1.7}.giftmsg{display:none}.questionNo{position:relative}.footerBtns{margin-top:22px}@media(max-width:700px){.open-grid{grid-template-columns:1fr}.options{grid-template-columns:1fr}.card{padding:24px 16px}.scene img{aspect-ratio:4/3}.heroimg{max-height:420px}}
+</style></head><body>
+<div class="heart h1">❤️</div><div class="heart h2">♡</div><div class="heart h3">💗</div><div class="heart h4">❤️</div><div class="heart h5">♡</div>
+<div id="pinGate" class="pin"><div class="pinbox"><div class="kicker">A LITTLE SECRET FOR YOU ❤️</div><h1>Enter the Secret Number</h1><p>Birthday date 💗</p><input id="pinInput" maxlength="4" inputmode="numeric" placeholder="••••"><div id="pinError" class="error"></div><button class="btn" onclick="checkPin()">OPEN MY SURPRISE ❤️</button></div></div>
+
+<section class="page active" id="page1"><div class="card"><div class="open-grid"><div><div class="kicker">A LITTLE PIECE OF MY HEART</div><h1 class="title">Oii Mama... ❤️</h1><div class="message"><b>💌 New message from me</b><p>Tap this message to read... 👀❤️</p><hr><p>I have been waiting to tell you something... 🥹</p><p>This is not just a birthday wish. It is a little piece of my heart, made specially for you. 💕</p></div><p>🎁 Something is waiting for you...</p><button class="btn" onclick="showPage(2)">OPEN YOUR SURPRISE ❤️</button></div><img class="heroimg" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=85" alt="Romantic couple"></div></div></section>
+
+<section class="page" id="page2"><div class="card"><div class="kicker">JUST ONE LITTLE THING... 🎁💗</div><h1 class="title">I Have A Surprise Ready For You... 🥹</h1><p class="sub">But before I open it...<br>Are you ready, Mama? ❤️</p><div id="readyView"><button class="btn" onclick="showPage(3)">YES ❤️</button><button class="btn noBtn" onclick="readyNo()">NO 😏</button><br><button class="btn back" onclick="showPage(1)">← GO BACK ❤️</button></div><div id="angryView" style="display:none"><h2>HOW DARE YOU! 😾💦</h2><p class="sub">Avlo thairiyam-a NO click pandra? 😾💦</p><p>Come back and choose YES... I am waiting! ❤️</p><button class="btn" onclick="readyBack()">← GO BACK & CHOOSE YES ❤️</button></div></div></section>
+
+<section class="page" id="page3"><div class="card"><div class="kicker">Oii Chellom...</div><h1 class="title">Who are you to me? ❤️</h1><div class="options"><div class="option">My Husband ❤️</div><div class="option">My Best Friend 🫶</div><div class="option">My Favourite Person 😍</div><div class="option">My Fighting Partner 😤❤️</div><div class="option">My Paithiyam 🤪❤️</div></div><button class="btn" onclick="revealAnswer()">WHAT'S THE ANSWER? ❤️</button><div id="answer" class="answer"><p>Hmm... let me think... 🤔❤️</p><p>Okay... I know the answer! 😂❤️</p><p>Actually... you're <b>ALL OF THEM!</b> 🥹❤️</p><h2>YOU ARE MY EVERYTHING ❤️</h2></div><div class="footerBtns"><button class="btn" onclick="showPage(4)">NEXT ❤️</button><button class="btn back" onclick="showPage(2)">← GO BACK ❤️</button></div></div></section>
+
+<section class="page" id="page4"><div class="card"><div class="kicker">OUR REAL LOVE STORY</div><h1 class="title">Thousands of Fights... 😤❤️</h1><div id="fightCount" class="fightcount">0</div><p>Tap ❤️ to count our silly fights</p><button class="btn" onclick="addFight()">ONE MORE FIGHT 😤❤️</button><button class="btn back" onclick="finishFights()">ENOUGH... WE STILL LOVE ❤️</button><div id="fightResult" class="answer"></div><div class="footerBtns"><button class="btn" onclick="showPage(5)">NEXT ❤️</button><button class="btn back" onclick="showPage(3)">← GO BACK ❤️</button></div></div></section>
+<section class="page" id="page5"><div class="card"><div class="kicker">OUR LITTLE CALCULATOR</div><h1 class="title">Calculate Our Result ♾️</h1><div class="calc">LOVE ❤️ + FIGHT 😤 + LOVE ❤️ + FIGHT 😤 + LOVE ❤️</div><p>😂 LAUGHTER + 📸 MEMORIES + 🫂 HUGS + ♾️ FOREVER</p><button class="btn" onclick="calculateUs()">CALCULATE US RESULT ♾️</button><div id="calcResult" class="answer"></div><div class="footerBtns"><button class="btn" onclick="showPage(6)">NEXT ❤️</button><button class="btn back" onclick="showPage(4)">← GO BACK ❤️</button></div></div></section>
+
+<section class="page" id="page6"><div class="card"><div class="kicker">A PROMISE FROM MY HEART</div><h1 class="title">Still You. Still Me. Still Us. ❤️</h1><div class="scene"><div style="font-size:90px;padding:20px">❤️</div></div><p class="sub">No matter how many fights, laughs, or crazy days...<br>I'll always choose you. 🥹❤️</p><h2>YOU + ME = US, ALWAYS. ♾️</h2><div class="footerBtns"><button class="btn" onclick="showPage(7)">NEXT ❤️</button><button class="btn back" onclick="showPage(5)">← GO BACK ❤️</button></div></div></section>
+
+<section class="page" id="page7"><div class="card"><div class="kicker">OUR FOREVER LITTLE MOMENT</div><h1 class="title">One More Thing I Want You To Know ❤️</h1><p class="sub">♥ ♥ ♥</p><p>Through every laugh, every fight, every silly moment...<br>My favourite place will always be<br><b>beside you. 🫂❤️</b></p><p>Ready for the question I've been waiting to ask? 🥹</p><button class="btn" onclick="openLetter()">A birthday letter 💌</button><div id="letter" class="letter"><h2>💌</h2>You are my favourite person, my fighting partner, my paithiyam... and my forever. 🥹❤️</div><div class="footerBtns"><button class="btn" onclick="showPage(8)">NEXT ❤️</button><button class="btn back" onclick="showPage(6)">← GO BACK ❤️</button></div></div></section>
+
+<section class="page" id="page8"><div class="card"><div class="kicker">ONE LAST QUESTION...</div><h1 class="title">எத்தனை ஜென்மம் ஆனாலும், உன்னுடைய எண்ணவள் நான் தானா? ❤️</h1><p class="sub">Even in every lifetime... will I still be your person? 🥹❤️</p><button class="btn" onclick="showPage(9)">YES ❤️</button><button class="btn" onclick="showPage(9)">YESSSS ❤️😂</button><button id="qNo" class="btn questionNo">NO ❌</button><div class="footerBtns"><button class="btn back" onclick="showPage(7)">← GO BACK ❤️</button></div></div></section>
+
+<section class="page" id="page9"><div class="card"><div class="kicker">A SECRET BIRTHDAY GIFT</div><h1 class="title">There Is A Gift For You 🎁</h1><p>Don't open it too quickly... tap the box. 👀❤️</p><div class="gift" onclick="openGift()">🎁</div><div id="giftReveal" class="reveal"><h2>Surprise! 🥹❤️</h2><p>✨ Celebration moment</p><p>💗 My favourite person</p><p>🫂 One forever hug</p><p>Tap the message to open it...</p></div><div class="footerBtns"><button class="btn" onclick="showPage(10)">NEXT — CAKE CUTTING 🎂</button><button class="btn back" onclick="showPage(8)">← GO BACK ❤️</button></div></div></section>
+<section class="page" id="page10"><div class="card"><div class="kicker">CUTE CELEBRATION MOMENT</div><h1 class="title">Cake Cutting 🎂❤️</h1><p class="sub">Watch our cute cartoon couple celebrate like a tiny love video... 🎂🧸❤️</p><div class="scene animated"><img src="https://i.pinimg.com/474x/99/a6/9a/99a69a36c04a617eced22c9f346cc207.jpg" alt="Cute anime couple"></div><div class="row"><button class="btn" onclick="cutCake()">🎂 Cut the cake</button><button class="btn" onclick="cutCake()">🍰 Share the sweetness</button><button class="btn" onclick="cutCake()">❤️ Celebrate us</button></div><div id="cakeMsg" class="reveal"></div><div class="footerBtns"><button class="btn" onclick="showPage(11)">NEXT — HUG & KISS 🫂💋</button><button class="btn back" onclick="showPage(9)">← GO BACK ❤️</button></div></div></section>
+
+<section class="page" id="page11"><div class="card"><div class="kicker">A TINY ROMANTIC MOMENT 💗</div><h1 class="title">Hug & Kiss 🫂💋❤️</h1><div class="scene animated"><img src="https://i.pinimg.com/474x/99/a6/9a/99a69a36c04a617eced22c9f346cc207.jpg" alt="Anime couple hug and kiss"></div><h2>HUG → KISS → FOREVER ♾️</h2><div class="footerBtns"><button class="btn" onclick="showPage(12)">NEXT ❤️</button><button class="btn back" onclick="showPage(10)">← GO BACK ❤️</button></div></div></section>
+
+<section class="page" id="page12"><div class="card"><div class="kicker">07 • 10 • 2026</div><h1 class="title">🎂🥳🎈❤️</h1><p>Click each balloon one by one... 🎈❤️</p><div class="balloons"><span class="balloon" onclick="balloon(0)">🎈</span><span class="balloon" onclick="balloon(1)">🎈</span><span class="balloon" onclick="balloon(2)">🎈</span><span class="balloon" onclick="balloon(3)">🎈</span><span class="balloon" onclick="balloon(4)">🎈</span><span class="balloon" onclick="balloon(5)">🎈</span><span class="balloon" onclick="balloon(6)">🎈</span></div><div id="balloonMsg">Happy Birthday, my dear purusha ❤️</div><button class="btn" onclick="showPage(13)">ONE LAST THING ❤️</button><button class="btn back" onclick="showPage(11)">← GO BACK ❤️</button></div></section>
+
+<section class="page" id="page13"><div class="card"><div class="kicker">FROM MY HEART</div><h1 class="final">LOVE YOU CHELLAM ❤️</h1><p class="sub">Today.<br>Tomorrow.<br>Every lifetime.<br><b>It's You. ❤️</b></p><button class="btn" onclick="celebrate()">Tap to open... 🫂❤️💋</button><div id="finalMsg" class="answer"></div><div class="footerBtns"><button class="btn back" onclick="showPage(12)">← GO BACK ❤️</button><button class="btn" onclick="showPage(1)">START AGAIN ❤️</button></div></div></section>
+
 <script>
-
-function showPage(n) {
-  document.querySelectorAll(".page").forEach(function(page) {
-    page.classList.remove("active");
-  });
-
-  var page = document.getElementById("page" + n);
-
-  if (page) {
-    page.classList.add("active");
-    window.scrollTo(0, 0);
-  }
-}
-
-
-function reveal() {
-  var answerBox = document.getElementById("answerBox");
-  var finalText = document.getElementById("finalText");
-
-  answerBox.style.display = "block";
-
-  setTimeout(function() {
-
-    finalText.innerHTML = `
-      <p>Okay... I know the answer! 😂❤️</p>
-
-      <p>
-        Actually... you're <b>ALL OF THEM!</b> 🥹❤️
-      </p>
-
-      <p>
-        My Love ❤️<br>
-        My Fighting Partner 😤❤️<br>
-        My Paithiyam 🤪❤️
-      </p>
-
-      <h2>YOU ARE MY EVERYTHING ❤️</h2>
-    `;
-
-  }, 1500);
-}
-
-
-document.addEventListener("DOMContentLoaded", function() {
-
-  document
-    .getElementById("openSurprise")
-    .addEventListener("click", function() {
-      showPage(2);
-    });
-
-
-  document
-    .getElementById("goBack")
-    .addEventListener("click", function() {
-      showPage(1);
-    });
-
-
-  document
-    .getElementById("answerButton")
-    .addEventListener("click", reveal);
-
-});
-
-</script>
+function showPage(n){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));let p=document.getElementById('page'+n);if(p){p.classList.add('active');scrollTo(0,0)}}
+function checkPin(){let v=document.getElementById('pinInput').value.trim();if(v==='0607'){document.getElementById('pinGate').style.display='none';showPage(1)}else{document.getElementById('pinError').textContent='Wrong number! 😤😂';document.getElementById('pinInput').value=''}}
+document.getElementById('pinInput').addEventListener('keydown',e=>{if(e.key==='Enter')checkPin()});
+function readyNo(){document.getElementById('readyView').style.display='none';document.getElementById('angryView').style.display='block'}function readyBack(){document.getElementById('angryView').style.display='none';document.getElementById('readyView').style.display='block'}
+function revealAnswer(){let b=document.getElementById('answer');b.style.display='block';b.innerHTML='<p>Hmm... let me think... 🤔❤️</p><p>Okay... I know the answer! 😂❤️</p><p>Actually... you are <b>ALL OF THEM!</b> 🥹❤️</p><h2>YOU ARE MY EVERYTHING ❤️</h2>'}
+let fights=0;function addFight(){fights++;document.getElementById('fightCount').textContent=fights+' fight'+(fights===1?'':'s');if(fights>=10){let r=document.getElementById('fightResult');r.style.display='block';r.innerHTML='😂 Thousands of fights... but still <b>US</b>. ❤️'}}function finishFights(){let r=document.getElementById('fightResult');r.style.display='block';r.innerHTML='😤 Fight finished! ❤️ Love wins again.<br><b>We never choose breakup — we choose us. 🥹❤️</b>'}
+function calculateUs(){let r=document.getElementById('calcResult');r.style.display='block';r.innerHTML='<div class="calc">LOVE ❤️ + FIGHT 😤 + LOVE ❤️ + FIGHT 😤 + LOVE ❤️</div><p>😂 LAUGHTER + 📸 MEMORIES + 🫂 HUGS + ♾️ FOREVER</p><p><b>RESULT: YOU + ME = US ❤️🥹</b></p>'}
+function openLetter(){document.getElementById('letter').style.display='block'}function openGift(){document.getElementById('giftReveal').style.display='block'}function cutCake(){let m=document.getElementById('cakeMsg');m.style.display='block';m.innerHTML='🎂 Cake cutting moment! 🍰❤️✨'}
+const words=['Happy','Birthday','My','Dear','Purusha','❤️','🎂'];let bi=0;function balloon(i){if(i===bi){document.getElementById('balloonMsg').textContent=words[bi];bi++;if(bi===words.length)document.getElementById('balloonMsg').textContent='Happy Birthday My Dear Purusha ❤️🎂'}}function celebrate(){let r=document.getElementById('finalMsg');r.style.display='block';r.innerHTML='<h2>🫂❤️💋</h2><h2>LOVE YOU CHELLAM ❤️</h2>'}
+const no=document.getElementById('qNo');no.addEventListener('mouseenter',moveNo);no.addEventListener('mousemove',moveNo);function moveNo(){let x=Math.random()*(Math.max(10,innerWidth-no.offsetWidth-20));let y=Math.random()*(Math.max(10,innerHeight-no.offsetHeight-20));no.style.position='fixed';no.style.left=x+'px';no.style.top=y+'px';no.style.zIndex=20}
+</script></body></html>
